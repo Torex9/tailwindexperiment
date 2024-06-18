@@ -19,25 +19,37 @@ const config: Config = {
 
       fontSize: {
         'heading': 'clamp(1.5rem, 0.8831rem + 4.9351vi, 6.25rem)',
-        'paragraph': 'clamp(0.875rem, 0.8036rem + 0.3571vi, 1.125rem)'
+        'paragraph': 'clamp(1rem, 0.9286rem + 0.3571vi, 1.25rem)'
       },
       spacing: {
         'padding': "clamp(1rem, 0.7143rem + 1.4286vi, 2rem)",
         'margin': ""
       },
       gridTemplateColumns: {
-        'responsive': 'repeat(auto-fit, minmax(clamp(300px, 10vw, 600px), 1fr))',
+        'responsive': 'repeat(auto-fit, clamp(18.75rem, 16.9643rem + 8.9286vi, 25rem))',
       },
+      width: {
+
+      },
+      height: {
+        'responsive': 'clamp(13rem, 12.1429rem + 4.2857vi, 16rem)'
+      },
+      maxWidth: {
+        'grid-responsive-width': 'clamp(12.5rem, 8.9286rem + 17.8571vi, 25rem)',
+        '8xl': '1840px'
+      },
+
+
       // gap: {
       //   'fluid': 'clamp(1rem, 2vw, 2rem)',
       // },
 
       utopia: (theme: any) => ({
         minScreen: theme('screens.md'),
-        minSize: 21,
+        minSize: 24,
         minScale: 1,
         maxScreen: '1440px',
-        maxSize: 100,
+        maxSize: 56,
         maxScale: 1,
         textSizes: [],
         spacingSizes: {},
