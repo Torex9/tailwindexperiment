@@ -2,13 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --grid-max-width: 92.5rem;
-  --grid-gutter: var(
-    --space-s-l,
-    clamp(1.125rem, 0.7457rem + 1.8966vw, 2.5rem)
-  );
-  --grid-columns: 12;
+.gridDiv {
+  --grid-max-width: 87.5rem;
+  --grid-gutter: var(--space-s-l, clamp(1rem, 0.2593rem + 3.7037vw, 3.5rem));
+  --min-column-width: clamp(12.5rem, 10.7143rem + 8.9286vi, 18.75rem);
 }
 
 .u-container {
@@ -20,4 +17,11 @@
 .u-grid {
   display: grid;
   gap: var(--grid-gutter);
+  grid-template-columns: repeat(auto-fit, minmax(var(--min-column-width), 1fr));
+}
+
+.u-grid-item {
+  background-color: lightgray;
+  border: 1px solid #ccc;
+  text-align: center;
 }

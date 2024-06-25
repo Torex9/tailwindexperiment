@@ -1,10 +1,17 @@
 import React from "react";
+import { div } from "three/examples/jsm/nodes/Nodes.js";
 
 function ProductsDetails() {
   return (
-    <div className="flex flex-col gap-6 mt-6">
-      <div className="border-b border-black/15 w-full h-2 " />
-      <div className="text-paragraph">hi</div>
+    <div className="gridDiv">
+      <div className="u-container">
+        <div className="u-grid">
+          <div className=" u-grid-item">item1</div>
+          <div className=" u-grid-item">item1</div>
+          <div className=" u-grid-item">item1</div>
+          <div className=" u-grid-item">item1</div>
+        </div>
+      </div>
     </div>
   );
 }
